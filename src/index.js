@@ -1,7 +1,8 @@
+require("dotenv").config();
 const { Client, MessageEmbed } = require("discord.js");
 const client = new Client();
 
-client.login("ODQ2ODUzMTEyMTM5NzQzMjMz.YK1jaw.8ErpDGzanP35pUVpuuBZPJjOvrc");
+client.login(process.env.DISCORD_TOKEN);
 
 client.on("ready", function () {
   console.log(`the bot is ready, ${client.user.tag}`);
