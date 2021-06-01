@@ -23,12 +23,19 @@ client.on("message", async function (msg) {
   }
 
   if (msg.content.includes("ye")) {
-    if (msg.content === "ye") {
-      msg.channel.send("ye ye ye!");
-    } else if (msg.content === "ye ye") {
-      msg.channel.send("ye ye!");
-    } else if (msg.content === "ye ye ye") {
-      msg.channel.send("ye!");
+    switch (msg.content) {
+      case "ye":
+        msg.channel.send("ye ye ye!");
+      break;
+      case "ye ye":
+        msg.channel.send("ye ye!");
+      break;
+      case "ye ye ye":
+        msg.channel.send("ye!");
+      break;
+      default:
+        msg.channel.send("That wasnt very ye of yours");
+      break;
     }
   }
 
