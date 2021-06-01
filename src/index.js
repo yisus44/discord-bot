@@ -19,7 +19,7 @@ client.on("message", async function (msg) {
   }
 
   if (msg.content.includes(ext + "test")) {
-    msg.channel.send("Glad you are testing");
+    msg.channel.send("Glad you are testing, ye");
   }
 
   if (msg.content.includes("ye")) {
